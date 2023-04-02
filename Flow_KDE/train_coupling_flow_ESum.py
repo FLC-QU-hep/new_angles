@@ -244,7 +244,7 @@ latent_file_path = 'YOUR LATENT FILE PATH'
 latent_file_name = 'YOUR_LATENT_FILE.h5'
 
 ###### Load latent file #########
-latent_file = h5py.File(latent_file_path + 'YOUR_LATENT_FILE.h5' ,'r')
+latent_file = h5py.File(latent_file_path + latent_file_name,'r')
 
 
 mu_full = latent_file['latent']['mu'][:]

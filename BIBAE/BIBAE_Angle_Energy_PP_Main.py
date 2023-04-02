@@ -222,9 +222,7 @@ def main(kwargs):
 
 #############################################################################
 # ECAL Photon energy and angle conditioning
-#############################################################################
-        
- ############################### CALIBRATED DATA TRAINING #####################################################       
+#############################################################################    
         
     elif params["model"] == "3D_M_BiBAEBatchS_Energy_Angle_P_None_C_BatchSV2Core_CL_Default_30x30x60Thresh_Reset_DATA_CALIB":
         netD = models.Discriminator_F_BatchStat_Energy_Angle_30x30x60().to(device)
@@ -242,7 +240,7 @@ def main(kwargs):
         
     
         
-################### CALIB PP, ESum only in PP model ##########################################################################
+################### ESum only in PP model ##########################################################################
     elif params["model"] == "3D_M_BiBAEBatchS_Energy_Angle_P_None_C_BatchSV2Core_CL_Default_30x30x60Thresh_Reset_No_LNorm_PP_ESum_CALIB":
         netD = models.Discriminator_F_BatchStat_Energy_Angle_30x30x60().to(device)
         #netD_Reset = models.Discriminator_F_BatchStat_Energy_Angle_30x30x60().to(device)
